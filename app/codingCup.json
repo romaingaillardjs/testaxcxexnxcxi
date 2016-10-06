@@ -1,0 +1,17 @@
+[
+  {
+  "name": "Coding cup",
+  "avatar": "svg-2",
+  "img":"code",
+  "content": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.",
+  "game":[{   "name":"Coding Cup",
+            "price":"2000€",
+            "img":"http://static5.businessinsider.com/image/558d93d6eab8ea003ddaa49d/learn-javascript-to-kick-start-your-coding-careeryoull-make-serious-bank-91-off.jpg",
+            "techno":["http://www.acensiuniversityleague.com/2015/img/devcup/c_plusplus.png",
+  "http://www.acensiuniversityleague.com/2015/img/devcup/c_sharp.png",
+  "http://www.acensiuniversityleague.com/2015/img/devcup/php.png","http://www.acensiuniversityleague.com/2015/img/devcup/java.png","http://www.acensiuniversityleague.com/2015/img/devcup/javascript.png"]
+        }]
+  }
+]
+
+

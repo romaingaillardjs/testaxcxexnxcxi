@@ -1,0 +1,49 @@
+<md-card layout-align="center center">
+  <md-card-content class="md-subhead"> 
+      <p>N'hésite pas à réagir et à poser tes questions sur les réseaux sociaux. Nos supers community managers te répondront avec plaisir !</p>
+  </md-card-content>
+</md-card>
+
+<div layout-gt-sm="row" layout-align="center">
+
+
+  <md-card flex  class="md-padding" layout-gt-md="column">
+                       
+                                <form name="userForm">
+                                    <div>
+                                        <md-input-container flex> <label>First Name</label> <input ng-model="user.firstName"> </md-input-container>
+                                        <md-input-container flex> <label>Last Name</label> <input ng-model="user.lastName"> </md-input-container>
+                                    </div>
+                                    <md-input-container flex> <label>Address</label> <input ng-model="user.address"> </md-input-container>
+                                    <div>
+                                        <md-input-container flex> <label>City</label> <input ng-model="user.city"> </md-input-container>
+                                        <md-input-container flex> <label>State</label> <input ng-model="user.state"> </md-input-container>
+                                        <md-input-container flex> <label>Postal Code</label> <input ng-model="user.postalCode"> </md-input-container>
+                                    </div>
+                                </form>
+                            
+                            <div class="md-actions" layout="row"> <span flex></span>
+                                <md-button ng-click=""> Cancel </md-button>
+                                <md-button ng-click="" class="md-primary"> Save </md-button>
+                            </div>
+                         
+                       </md-card>
+
+  <md-card flex layout-gt-sm="row" layout-align="center">
+    <md-card-header layout-gt-sm="column">
+      <md-card-header-text flex> Adresse </md-card-header-text>
+    </md-card-header>
+    <md-card-title flex>
+      <md-card-title-text>
+        <p class="md-headline"> ACENSI <br> Tour Monge<br> 22, place des Vosges<br> 92400 Courbevoie – La Défense5<br> </p>
+        <h4>Email</h4>
+        <h4>Par téléphone</h4>
+        <p><a href="tel:0175611077">01 75 61 10 77</a></p>
+        <p><a href="mailto:aul@acensi.fr">aul@acensi.fr</a></p>
+      </md-card-title-text>
+    </md-card-title>
+    
+  </md-card>
+</div>
+
+

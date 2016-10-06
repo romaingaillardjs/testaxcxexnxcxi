@@ -1,0 +1,56 @@
+<div flex layout-gt-sm="column" layout-align="space-between">
+
+  <div flex layout-gt-sm="row" layout-align="center end space-between">
+
+
+    <md-card class="md-whiteframe-15dp" flex-gt-sm="40" layout-gt-sm="column" layout-align="center space-between center">
+      <md-card-header layout-align="center center" style="background-image:url({{ul.selected[1].game[0].img}});background-position: 30% 30%;background-size: 100%;height:70px;"> </md-card-header>
+      <md-card-title flex>
+        <md-card-title-text> <span class="md-title">{{ul.selected[1].game[0].name}}</span> <span class="md-subhead ">Cash Price : {{ul.selected[1].game[0].price}}</span> </md-card-title-text>
+      </md-card-title>
+      <md-card-content flex>
+        <ul style="list-style-type: none;">
+          <li> <i class="material-icons" style="font-size:200%">access_time</i> <span>June 11th, 2016</span> </li>
+          <li> <i class="material-icons" style="font-size:200%">location_on</i> <span>ME</span> </li>
+          <li> <i class="material-icons" style="font-size:200%">supervisor_account</i> <span>Melee Singles, Melee Doubles, Project M Singles, Wii U Singles, Wii U Doubles</span> </li>
+        </ul>
+      </md-card-content>
+        <md-card-actions id="card1" style="width:100%;margin:0px;">
+      <md-button flex class="success" style="width:100%;" ng-click="clicked4=true" ng-hide="clicked4">S'inscrire</md-button>
+        <div layout="row" layout-margin ng-if="clicked4">
+          <md-content flex class="md-padding">
+                <md-content class="md-padding" ng-if="clicked4">
+                  <md-input-container class="tab-header" flex> <label></label> <textarea ng-model="facility.info" columns="1" md-maxlength="1000"></textarea>
+                    <md-subheader>Comment Actions</md-subheader>
+                    <md-content class="md-padding">
+                      <form name="userForm">
+                        <div layout layout-sm="column">
+                          <md-input-container flex> <label>First Name</label> <input ng-model="user.firstName" placeholder="Placeholder text"> </md-input-container>
+                          <md-input-container flex> <label>Last Name</label> <input ng-model="theMax"> </md-input-container>
+                        </div>
+                        <md-input-container flex> <label>Address</label> <input ng-model="user.address"> </md-input-container>
+                        <div layout layout-sm="column">
+                          <md-input-container flex> <label>City</label> <input ng-model="user.city"> </md-input-container>
+                          <md-input-container flex> <label>State</label> <input ng-model="user.state"> </md-input-container>
+                          <md-input-container flex> <label>Postal Code</label> <input ng-model="user.postalCode"> </md-input-container>
+                        </div>
+                        <md-input-container flex> <label>Biography</label> <textarea ng-model="user.biography" columns="1" md-maxlength="150"></textarea> </md-input-container>
+                      </form>
+                    </md-content>
+                    <div class="md-actions" layout="row"> <span flex></span>
+                      <md-button ng-click="answer(\'not useful\')"> Cancel </md-button>
+                      <md-button ng-click="answer(\'useful\')" class="md-primary"> Save </md-button>
+                    </div>
+                  </md-input-container>
+                </md-content>   
+          </md-content>
+        </div>       
+      </md-card-actions>
+      </md-card>
+  </div>
+</div>
+
+</div>
+
+
+     

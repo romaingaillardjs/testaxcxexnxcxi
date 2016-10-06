@@ -1,0 +1,101 @@
+<div layout-gt-sm="column" layout-align="center space-between">
+
+<!-- <div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div> -->
+
+  <!--   <ul rn-carousel rn-carousel-auto-slide style="height:300px;width:900px;">
+        <li><img src="https://i.ytimg.com/vi/Wxc66gfhgD4/maxresdefault.jpg" alt="" style="width:100%;height:100%"></li>
+        <li><img src="http://assets.cebit.com.au/wp-content/uploads/2012/03/cebit-gaming.jpg" style="width:100%;height:100%" alt=""></li>
+        <li><img src="http://assets.cebit.com.au/wp-content/uploads/2012/03/cebit-gaming.jpg" style="width:100%;height:100%" alt=""></li>
+    </ul> -->
+    <div id="mainbackground">
+    <div layout-gt-md="column" flex-gt-sm="100" layout-align="center space-between center">
+        <div ng-repeat="Index in [0,2]">
+            <div layout-gt-md="row"  layout-align="center space-between center">
+                <div ng-repeat="index in [Index,Index+1]">
+                    <div>
+                    <md-card ng-if="location.path() == '/{{ul.selected[0].game[index].name}}'" id="img{{index}}" class="game md-whiteframe-15dp" flex-gt-sm="90" layout-gt-sm="column" layout-align="center space-between center" ng-init="hover=false" ng-mouseenter="hover=true" ng-mouseleave="hover=!hover">
+                        <md-card-header layout-align="center center" style="background-image:url({{ul.selected[0].game[index].img}});background-position: 50% 50%;background-size:100%;z-index:3;"></md-card-header>
+                        <md-card-title layout-gt-sm="row">
+                            <md-card-title-text flex>
+                                <span class="md-title">{{ul.selected[0].game[index].name}}</span>
+                                <span class="md-subhead ">Cash Price : {{ul.selected[index].game[index].price}}</span>
+                            </md-card-title-text>
+                            <md-button flex="15" class="md-raised" aria-label="facebook" id="facebook-icon">
+                            </md-button>
+                        </md-card-title>
+                        <md-card-content>
+                            <md-card-actions id="detail{{index}}" style="width:100%;margin:0px;">
+                                    <div ng-cloak>
+                                        <md-content>
+                                            <md-tabs md-dynamic-height md-border-bottom>
+                                                <md-tab label="info">
+                                                    <md-content class="md-padding">
+                                                        <ul style="list-style-type: none;">
+                                                            <li> <i class="material-icons">access_time</i> <span class="md-caption">June 11th, 2016</span> </li>
+                                                            <li> <i class="material-icons">location_on</i> <span class="md-caption">ME</span> </li>
+                                                            <li> <i class="material-icons">supervisor_account</i> <span class="md-caption">
+                                                            Melee Singles / Melee Doubles du texte nousghoreghoireolhmepkpetê </span> </li>
+                                                        </ul>
+                                                    </md-content>
+                                                </md-tab>
+                                                <md-tab label="inscription">
+                                                    <md-content class="md-padding">
+
+                                                        <md-input-container class="tab-header"> <label></label> <textarea ng-model="facility.info" columns="1" md-maxlength="1000"></textarea>
+                                                            <md-subheader>Comment Actions</md-subheader>
+                                                            <md-content class="md-padding">
+                                                                <form name="userForm">
+                                                                    <div layout layout-sm="column">
+                                                                        <md-input-container flex> <label>First Name</label> <input ng-model="user.firstName" placeholder="Placeholder text"> </md-input-container>
+                                                                        <md-input-container flex> <label>Last Name</label> <input ng-model="theMax"> </md-input-container>
+                                                                    </div>
+                                                                    <md-input-container flex> <label>Address</label> <input ng-model="user.address"> </md-input-container>
+                                                                    <div layout layout-sm="column">
+                                                                        <md-input-container flex> <label>City</label> <input ng-model="user.city"> </md-input-container>
+                                                                        <md-input-container flex> <label>State</label> <input ng-model="user.state"> </md-input-container>
+                                                                        <md-input-container flex> <label>Postal Code</label> <input ng-model="user.postalCode"> </md-input-container>
+                                                                    </div>
+
+                                                                </form>
+                                                            </md-content>
+                                                            <div class="md-actions" layout="row"> <span flex></span>
+                                                                <!-- <md-button ng-click="answer(\'not useful\')"> Cancel </md-button>
+                                                                <md-button ng-click="answer(\'useful\')" class="md-primary"> Save </md-button> -->
+                                                            </div>
+                                                        </md-input-container>
+                                                    </md-content>
+                                                </md-tab>
+                                                <md-tab label="tournoi">
+                                                    <md-content class="md-padding">
+                                                        <iframe width="640" height="360" src="https://widget.toornament.com/tournaments/563bcb48150ba09c1e8b4583/navigator?_locale=en_GB&theme=light" frameborder="0" allowfullscreen></iframe>
+                                                    </md-content>
+                                                </md-tab>
+                                            </md-tabs>
+                                        </md-content>
+                                    </div>
+                            </md-card-actions>
+                        </md-card-content>
+                    </md-card>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;height:25%;">
+        <md-card layout="column" layout-align="center center">
+            <md-card-content>
+                <div align="center"> <a class="twitter-timeline" href="https://twitter.com/testAUL" data-widget-id="733291485345525761">Tweets de @testAUL</a> </div>
+                <div layout-gt-sm="row" layout-align="center center">
+                    <div align="center"> <img src="http://divinity-g4ming.com/images/LogoLES.jpg" alt=""> </div>
+                    <div align="center"> <img src="http://starcraft.md/Content/Gallery/e2cb5500-74f7-46e9-bbbf-71e6a6342ebb-millenium.jpg" alt=""> </div>
+                    <div align="center"> <img src="http://img.stackshare.io/stack/21284/hackerrankcom.png" alt=""> </div>
+                    <div align="center"> <img src="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/128/Intel.png" alt=""> </div>
+                </div>
+                <div> <span class="col-xs-6"><a href="/2015/organizers">A propos d’ACENSI</a></span> <span class="col-xs-6"><a href="/2015/legal">Mentions légales</a></span> <span><a href="/2015/contact">Nous contacter</a></span> </div>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>
+</div> 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Acensi University League</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/app.css" />
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/3c22b2c3ca/UntitledProject/style.css">
+  <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="../node_modules/angular-material-icons/angular-material-icons.css" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+<body ng-app="myApp" ng-jq="https://code.jquery.com/jquery-3.0.0.min.js" ng-controller="MainCtrl" ng-cloak>  
+  <md-toolbar id="toolbarbackground"  class="md-medium-tall md-whiteframe-18dp" md-scroll-shrink="true">    
+    <div layout="row" layout-align="space-around center" >  
+        <md-button flex="10" layout-fill ng-click="toggleList('left')" aria-label="Show User List">
+          <i class="material-icons md-display-2">&#xE5D2</i>
+        </md-button>
+        <div align="center"flex="70">
+      <span  class="md-subhead">Acensi University League</span>
+      </div>
+      <md-button  flex="10" layout-fill ng-click="toggleList('right')">
+          <div class="card__social">  
+              <a class="share-icon facebook" href="#">
+                <span class="fa fa-facebook"></span></a>
+                  <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                  <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+          </div>
+            <a id="share" class="share-toggle share-icon" href="#"></a>
+        </md-button>
+    </div> 
+  </md-toolbar>
+  <md-content>
+  <section layout="row" flex>
+  <md-sidenav ng-click="toggleList('left')"  md-component-id="left" class="site-sidenav md-sidenav-left hide-print md-closed ng-isolate-scope md-locked-open">
+    <md-content>
+      <md-list style="padding:0;">
+      <md-list-item class="sidenav-header"></md-list-item>
+        <md-list-item ng-repeat="it in users" layout="column" layout-align="space-between stretch">
+          <md-button class="md-display-1" flex ng-click="change(it.name)" ng-href="#/{{it.name}}" layout="row" layout-align="start center">
+            <i class="material-icons md-display-1">{{it.img}}</i><span class="md-headline">{{it.name}}</span>
+          </md-button>
+        </md-list-item>
+      </md-list>
+    </md-content>
+  </md-sidenav>
+  <md-sidenav ng-click="toggleList('right')"  md-component-id="right" class="site-sidenav md-sidenav-right hide-print md-closed ng-isolate-scope md-locked-open">
+    <md-content>
+      <md-list style="padding:0;">
+      <md-list-item class="sidenav-header"></md-list-item>
+        <md-list-item ng-repeat="it in users" layout="column" layout-align="space-between stretch">
+          <md-button class="md-display-1" flex ng-click="change(it.name)" ng-href="#/{{it.name}}" layout="row" layout-align="start center">
+            <i class="material-icons md-display-1">{{it.img}}</i><span class="md-headline">{{it.name}}</span>
+          </md-button>
+        </md-list-item>
+      </md-list>
+    </md-content>
+  </md-sidenav>
+</section>
+    <md-content layout="column" id="background" layout-align="space-between">
+    <div flex="10"></div>
+      <div align="center" class="maintitle md-display-1">&nbsp;{{path}}</div>  
+      <div ng-view></div>
+      <div id="footerbackground" class="footer" layout-gt-sm="column" layout-align="space-around" >
+        <div flex align="center"> 
+             <a class="twitter-timeline" data-width="320" data-height="251" data-theme="dark" data-link-color="#ddc85b" href="https://twitter.com/testAUL">Tweets by testAUL</a> 
+          </div>
+         <div align="center"> <a>Nos partenaires</a></div> 
+        <div layout-gt-sm="row" layout-align="space-around center">
+          
+          
+          <div layout="column" layout-align="space-between center">
+           <div flex align="center"> <img width="100"height="100"src="http://www.acensiuniversityleague.com/2015/img/partners/intel.png" alt=""> </div>
+            <div flex align="center"> <img width="200"height="200"src="http://www.acensiuniversityleague.com/2015/img/partners/LyonESport2.png" alt=""> </div>
+            <div flex align="center"> <img width="300"height="120"src="http://www.acensiuniversityleague.com/2015/img/partners/Millenium.png" alt=""> </div>
+            <div flex align="center"> <img width="300"height="80"src="http://www.acensiuniversityleague.com/2015/img/partners/hacker_rank.png" alt=""> </div>
+           
+          </div>  
+          
+        </div>
+       
+        <div align="center">
+          
+            <div class="col-xs-6"><a href="/2015/organizers">A propos d’ACENSI</a></div> 
+            <div class="col-xs-6"> <a href="/2015/legal">Mentions légales</a></div> 
+            <div><a href="/2015/contact">Nous contacter</a></div> 
+          
+          <div>
+            <h1 class="md-display-3"><a target="_blank" href="http://www.acensi.fr"></a>Acensi</h1> 
+          </div>
+        </div>
+      </div>
+    </md-content>
+  </md-content>
+  <script src="../node_modules/angular/angular.js">                               </script> 
+  <script src="../node_modules/angular-aria/angular-aria.js">                     </script>
+  <script src="../node_modules/angular-route/angular-route.js">                   </script>
+  <script src="../node_modules/angular-animate/angular-animate.js">               </script>
+  <script src="../node_modules/angular-material/angular-material.js">             </script>
+  <script src="../node_modules/angular-material-icons/angular-material-icons.js"> </script>
+  <script src="../node_modules/angular-sanitize/angular-sanitize.min.js">         </script>
+  <script src="../node_modules/angular-touch/angular-touch.js">                   </script>
+  <script src="./src/users/app.js">                                               </script>
+  <script src="./src/users/controllers.js">                                       </script>
+  <script src="./src/users/services.js">                                          </script>
+  <script src="./src/users/filters.js">                                           </script>
+  <script src="./src/users/directives.js">                                        </script>
+  <script src="./src/users/twitter.js">                                           </script>
+</body>
+</html>

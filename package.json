@@ -1,0 +1,37 @@
+{
+  "name": "material-start",
+  "private": true,
+  "version": "0.0.4",
+  "description": "A starter project for AngularJS Material",
+  "repository": "https://github.com/angular/material-start",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/material/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "angular": "*",
+    "angular-route": "*",
+    "angular-animate": "*",
+    "angular-aria": "*",
+    "angular-sanitize": "*",
+    "angular-material": "*",
+    "angular-touch": "*",
+    "angular-carousel": "*",
+    "angular-material-icons": "*"
+    
+    
+  },
+  "devDependencies": {
+    "angular-mocks": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-jasmine": "*",
+    "live-server": "*"
+  },
+  "scripts": {
+    "prestart": "npm update",
+    "tests": "karma start ./test/karma.conf.js"
+  }
+}

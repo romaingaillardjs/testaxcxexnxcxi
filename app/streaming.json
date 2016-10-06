@@ -1,0 +1,18 @@
+[
+  {
+  "name": "Streaming VOD",
+  "avatar": "svg-2",
+  "img":"tv",
+  "content": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.",
+  "game":[{   "name":"Streaming Hearthstone",
+            "price":"750€",
+            "img":"http://img0.gm.gtsstatic.com/wallpapers/c487106cf62da185fd2c5623b9b9c9fa_large.jpeg"
+        },
+        {   "name":"Streaming League of Legends",
+            "price":"2000€",
+            "img":"http://www.biendebuter.net/wp-content/uploads/2014/02/Lolpres.jpg"
+        }]
+  }
+]
+
+

@@ -1,0 +1,63 @@
+<div layout="column" layout-align="space-around center">
+    <md-tabs class="maintab" md-dynamic-height md-stretch-tabs="always" md-border-bottom="" flex-gt-xs="100" flex-xs="100" md-no-ink-bar>
+        <md-tab id="tab1" aria-controls="Tab 1"ng-repeat="index in [0,1,2,3]" label="." >
+            <md-content id="cardbackground" class="md-padding"layout-align="space-between center">  
+                <div layout="column"   layout-align="space-between center">
+                    <md-card   class="transparent md-whiteframe-15dp" layout-align="center">
+                    <img flex src="{{gamingCup.game[index].img}}"class="md-card-image">
+                        <md-card-title layout="row" layout-align="center">
+                        <md-card-title-text flex layout-fill align="center" class="md-title">{{gamingCup.game[index].name}}</md-card-title-text>
+                        </md-card-title>
+                        <md-tabs id="tabbackground" class="secondtab md-caption" md-dynamic-height="" md-stretch-tabs="always" md-border-bottom="" flex >
+                            <md-tab label="info">
+                                <md-content class="md-padding">
+                                    <ul style="list-style-type: none;">
+                                        <li><span class="md-subhead ">Cash Price : {{gamingCup.game[index].price}}</span></li>
+                                        <li><i class="material-icons">access_time</i><span class="md-caption">{{gamingCup.game[index].informationTime}}</span></li>
+                                        <li><i class="material-icons">location_on</i><span class="md-caption">{{gamingCup.game[index].informationParticipants}}</span></li>
+                                        <li><i class="material-icons">supervisor_account</i><span class="md-caption">{{gamingCup.game[index].informationTypeMatch}}</span></li>
+                                    </ul>
+                                </md-content>
+                            </md-tab>
+                            <md-tab label="jouer">
+                                <md-content class="md-padding" layout-gt-md="column">
+                                    <form name="userForm">
+                                        <div>
+                                            <md-input-container flex> <label>First Name</label> <input required ng-model="user.firstName"> </md-input-container>
+                                            <md-input-container flex> <label>Last Name</label> <input required ng-model="user.lastName"> </md-input-container>
+                                        </div>
+                                        <md-input-container flex> <label>Address</label> <input ng-model="user.address"> </md-input-container>
+                                        <div>
+                                            <md-input-container flex> <label>email</label> <input type="mail" required ng-model="user.mail"> </md-input-container>
+                                            <md-input-container  md-no-float > <label>Date de Naissance</label><h4> <md-date required ng-model="user.submissionDate" ></h4> </md-input-container>
+                                            <md-input-container flex> <label>Postal Code</label> <input ng-model="user.postalCode"> </md-input-container>
+                                        </div>
+                                    </form>
+                                </md-content>
+                                <div class="md-actions" layout="row"> <span flex></span>
+                                    <md-button ng-click=""> Cancel </md-button>
+                                    <md-button ng-click="" class="md-primary"> Save </md-button>
+                                </div>
+                            </md-tab>
+                            <md-tab label="tournoi">
+                            <md-content class="md-padding">
+                                <div flex layout-fill align="center" >
+                                    <iframe flex="100"frameborder="0" allowfullscreen
+                                    src="https://widget.toornament.com/tournaments/563bcb48150ba09c1e8b4583/navigator?_locale=en_GB&theme=light">
+                                    </iframe>
+                                </div>
+                            </md-content>
+                            </md-tab>
+                        </md-tabs>
+                    </md-card>
+                </div>
+            </md-content>
+        </md-tab>
+    </md-tabs>
+    <div class="col-xs-6"> <a href="/2015/legal">Consulte le règlement ici : ACENSI Dev Cup</a></div> 
+</div>
+
+                           <!-- <md-card-title-text flex></md-card-title-text>
+                            <md-button flex="15" class="md-raised" aria-label="facebook" id="facebook-icon">
+                            </md-button>
+                        

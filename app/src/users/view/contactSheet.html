@@ -1,0 +1,45 @@
+<!-- <md-bottom-sheet class="md-list md-has-header">
+
+    <md-subheader>
+        Contact <span class="name">{{ cp.user.name }}</span>:
+    </md-subheader>
+
+    <md-list>
+      <md-item ng-repeat="item in cp.actions">
+        <md-button class="md-list-item-content" ng-click="cp.contactUser(item)" id="item_{{$index}}">
+            <md-icon md-svg-icon="{{ item.icon_url }}"></md-icon>
+            {{item.name}}
+        </md-button>
+      </md-item>
+    </md-list>
+
+</md-bottom-sheet> -->
+
+
+
+<md-bottom-sheet class="md-list md-has-header" ng-cloak>
+  <md-subheader>Comment Actions</md-subheader>
+
+  <md-content class="md-padding">
+  <form name="userForm">
+    <div layout layout-sm="column">
+      <md-input-container flex> <label>First Name</label> <input ng-model="user.firstName" placeholder="Placeholder text"> </md-input-container>
+      <md-input-container flex> <label>Last Name</label> <input ng-model="theMax"> </md-input-container>
+    </div>
+    <md-input-container flex> <label>Address</label> <input ng-model="user.address"> </md-input-container>
+    <div layout layout-sm="column">
+      <md-input-container flex> <label>City</label> <input ng-model="user.city"> </md-input-container>
+      <md-input-container flex> <label>State</label> <input ng-model="user.state"> </md-input-container>
+      <md-input-container flex> <label>Postal Code</label> <input ng-model="user.postalCode"> </md-input-container>
+    </div>
+    <md-input-container flex> <label>Biography</label> <textarea ng-model="user.biography" columns="1" md-maxlength="150"></textarea> </md-input-container>
+  </form>
+</md-content>
+<div class="md-actions" layout="row"> <span flex></span>
+  <md-button ng-click="answer(\'not useful\')"> Cancel </md-button>
+  <md-button ng-click="answer(\'useful\')" class="md-primary"> Save </md-button>
+</div>
+
+</md-bottom-sheet>
+
+

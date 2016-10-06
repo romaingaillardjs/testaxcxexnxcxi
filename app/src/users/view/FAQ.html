@@ -1,0 +1,23 @@
+<div flex-sm="90" layout="column" layout-align="center center">
+   	<div class="accordion" ng-repeat="faq in FAQ" layout="row" layout-align="center">
+		<input type="radio" name="accordion" id="cb{{faq.index}}" />
+		<md-card class="box" flex-gt-xs="100" flex-gt-sm="80" flex-gt-md="60"layout="column" layout-align="center center">
+			<div flex layout-fill align="center">
+				<label class="box-title md-body-2" for="cb{{faq.index}}" ng-bind-html=renderHtml(faq.titre)></label>
+				<label class="box-close" for="acc-close"></label>
+			</div>
+			
+			<md-card-content class="box-content md-body-1"ng-bind-html="renderHtml(faq.content)"></div>
+			</md-card-content>
+		</md-card>
+		<input type="radio" class="accordion" name="accordion" id="acc-close"/>
+	</div>
+</div>
+
+
+
+
+
+
+
+

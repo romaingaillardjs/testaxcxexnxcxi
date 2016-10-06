@@ -1,0 +1,119 @@
+[
+  {
+  "name": "Gaming cup",
+  "avatar": "svg-1",
+  "img":"security",
+  "content": "Que tu sois étudiant ou jeune diplômé, joueur occasionnel ou pro-gamer, confronte-toi online aux joueurs League of Legends de la France entière et tente d’atteindre les phases finales en live à Paris ! ",
+  "game":
+    [
+      {   "name":"<img src=\"https://www.toornament.com/disciplines/leagueoflegends/img/icon-48x48-medium.png?a4dcafe031189f1f00e4d042baa80c6f5a37f2e6\">",
+          "price":"750€",
+          "img":"http://media.blizzard.com/hearthstone/images/backgroundart.jpg",
+          "informationTime":"11 juin"
+
+      },
+      {   "name":"League of legend",
+          "price":"2000€",
+          "img":"http://euw.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/project_yasuo_splash.jpg?itok=s6-zHG7H",
+          "informationTime":"11 juin"
+      },
+      {   "name":"Clash Royal",
+          "price":"7500€",
+          "img":"http://www.journaldugeek.com/wp-content/blogs.dir/1/files/2016/03/clash-royale-hack-gemmes.jpg",
+          "informationTime":"11 juin"
+      },
+      {   "name":"Rocket leaugue",
+          "price":"2500€",
+          "img":"http://www.gohanblog.fr/www/wp-content/uploads/2015/07/test-rocket-league-PS4.jpg",
+          "informationTime":"11 juin"
+      }
+    ]
+},
+{
+  "name": "Coding cup",
+  "avatar": "svg-2",
+  "img":"code",
+  "content": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.",
+  "game":[{   "name":"Coding Cup",
+            "price":"2000€",
+            "img":"http://static5.businessinsider.com/image/558d93d6eab8ea003ddaa49d/learn-javascript-to-kick-start-your-coding-careeryoull-make-serious-bank-91-off.jpg",
+            "techno":["http://www.acensiuniversityleague.com/2015/img/devcup/c_plusplus.png",
+  "http://www.acensiuniversityleague.com/2015/img/devcup/c_sharp.png",
+  "http://www.acensiuniversityleague.com/2015/img/devcup/php.png","http://www.acensiuniversityleague.com/2015/img/devcup/java.png","http://www.acensiuniversityleague.com/2015/img/devcup/javascript.png"]
+        }]
+
+},
+  {
+  "name": "Streaming VOD",
+  "avatar": "svg-2",
+  "img":"tv",
+  "content": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.",
+  "game":[{   "name":"Streaming Hearthstone",
+            "price":"750€",
+            "img":"http://img0.gm.gtsstatic.com/wallpapers/c487106cf62da185fd2c5623b9b9c9fa_large.jpeg"
+        },
+        {   "name":"Streaming League of Legends",
+            "price":"2000€",
+            "img":"http://www.biendebuter.net/wp-content/uploads/2014/02/Lolpres.jpg"
+        }]
+
+  
+},
+
+{
+  "name": "Contacts",
+  "avatar": "svg-2",
+  "img":"contact_mail",
+  "content": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.",
+  "game":[{   "name":"Streaming Hearthstone",
+            "price":"750€",
+            "img":"http://team-jara.com/wp-content/uploads/2016/01/epique.jpg"
+        },
+        {   "name":"Streaming League of Legends",
+            "price":"2000€",
+            "img":"http://euw.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/project_yasuo_splash.jpg?itok=s6-zHG7H"
+        }]
+
+  
+},
+{
+  "name": "Partenaires",
+  "avatar": "svg-2",
+  "img":"compare_arrows",
+  "content": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.",
+  "game":[{   "name":"Hearthstone",
+            "price":"750€",
+            "img":"http://media.blizzard.com/hearthstone/images/backgroundart.jpg"
+        },
+        {   "name":"League of legend",
+            "price":"2000€",
+            "img":"http://euw.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/project_yasuo_splash.jpg?itok=s6-zHG7H"
+        },
+        {   "name":"Clash Royal",
+            "price":"7500€",
+            "img":"http://www.journaldugeek.com/wp-content/blogs.dir/1/files/2016/03/clash-royale-hack-gemmes.jpg"
+        },
+        {   "name":"Rocket leaugue",
+            "price":"2500€",
+            "img":"http://www.gohanblog.fr/www/wp-content/uploads/2015/07/test-rocket-league-PS4.jpg"
+        }]
+
+  
+},
+
+{
+  "name": "FAQ",
+  "avatar": "svg-2",
+  "img":"mode_comment",
+  "content": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.",
+  "game":[{   "name":"Streaming Hearthstone",
+            "price":"750€",
+            "img":"http://team-jara.com/wp-content/uploads/2016/01/epique.jpg"
+        },
+        {   "name":"Streaming League of Legends",
+            "price":"2000€",
+            "img":"http://euw.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/project_yasuo_splash.jpg?itok=s6-zHG7H"
+        }] 
+}]
+
+
